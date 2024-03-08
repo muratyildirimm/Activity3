@@ -10,9 +10,13 @@
   left: 3px;
 }
 
-.logo {
-  display: inline-block;
-  margin-right: 8px;
+.advertisement::before {
+  content: "";
+  font-size: 0;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 .title {
@@ -20,15 +24,30 @@
   position: absolute;
   top: 0;
 }
+
+.logo {
+  display: inline-block;
+  margin-right: 8px;
+}
+
 .image {
   width: 250px;
   height: 250px;
   float: left;
   margin: 8px;
 }
-#koala {
+
+.image img {
   width: 250px;
   height: 250px;
+}
+
+.main {
+  margin-top: 50px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 10px;
+  text-align: justify;
 }
 
 .header {
@@ -40,7 +59,8 @@
   margin: auto;
 }
 .head {
-  width: 70%;
-  margin: auto;
-  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
 }
